@@ -2,12 +2,12 @@
 
 # Generate slugs when saving Eloquent models
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/oddvalue/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/laravel-sluggable)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/spatie/laravel-sluggable/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-sluggable)
 [![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-sluggable.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-sluggable)
 [![StyleCI](https://styleci.io/repos/48512561/shield?branch=master)](https://styleci.io/repos/48512561)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
+[![Total Downloads](https://img.shields.io/packagist/dt/oddvalue/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/laravel-sluggable)
 
 This package provides a trait that will generate a unique slug when saving any Eloquent model.
 
