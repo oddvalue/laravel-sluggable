@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Sluggable;
+namespace Oddvalue\Sluggable;
 
 use Exception;
 

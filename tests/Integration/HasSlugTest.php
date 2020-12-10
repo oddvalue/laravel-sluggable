@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Sluggable\Test\Integration;
+namespace Oddvalue\Sluggable\Test\Integration;
 
 use Illuminate\Support\Str;
-use Spatie\Sluggable\SlugOptions;
+use Oddvalue\Sluggable\SlugOptions;
 
 class HasSlugTest extends TestCase
 {

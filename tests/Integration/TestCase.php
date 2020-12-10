@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Sluggable\Test\Integration;
+namespace Oddvalue\Sluggable\Test\Integration;
 
 use File;
 use Illuminate\Foundation\Application;
@@ -9,7 +9,7 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
-    /** @var \Spatie\Sluggable\Test\Integration\TestModel */
+    /** @var \Oddvalue\Sluggable\Test\Integration\TestModel */
     protected $testModel;
 
     public function setUp(): void

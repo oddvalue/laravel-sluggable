@@ -1,11 +1,11 @@
 {
-    "name": "spatie/laravel-sluggable",
+    "name": "oddvalue/laravel-sluggable",
     "description": "Generate slugs when saving Eloquent models",
     "keywords": [
         "spatie",
         "laravel-sluggable"
     ],
-    "homepage": "https://github.com/spatie/laravel-sluggable",
+    "homepage": "https://github.com/oddvalue/laravel-sluggable",
     "license": "MIT",
     "authors": [
         {
@@ -17,20 +17,20 @@
     ],
     "require": {
         "php" : "^7.2",
-        "illuminate/database": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0"
+        "illuminate/database": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
+        "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0|^5.0"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Sluggable\\": "src"
+            "Oddvalue\\Sluggable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Sluggable\\Test\\": "tests"
+            "Oddvalue\\Sluggable\\Test\\": "tests"
         }
     },
     "scripts": {

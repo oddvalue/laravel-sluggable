@@ -1,3 +1,5 @@
+<b style="color: red">Fork of https://github.com/spatie/laravel-sluggable to allow use on L8 with PHP 7.3, unless you need that use the original package</b>
+
 # Generate slugs when saving Eloquent models
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
@@ -7,7 +9,7 @@
 [![StyleCI](https://styleci.io/repos/48512561/shield?branch=master)](https://styleci.io/repos/48512561)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sluggable.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-sluggable)
 
-This package provides a trait that will generate a unique slug when saving any Eloquent model. 
+This package provides a trait that will generate a unique slug when saving any Eloquent model.
 
 ```php
 $model = new EloquentModel();
@@ -19,8 +21,6 @@ echo $model->slug; // ouputs "activerecord-is-awesome"
 
 The slugs are generated with Laravels `Str::slug` method, whereby spaces are converted to '-'.
 
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
 ## Installation
 
 You can install the package via composer:
@@ -30,9 +30,9 @@ composer require spatie/laravel-sluggable
 
 ## Usage
 
-Your Eloquent models should use the `Spatie\Sluggable\HasSlug` trait and the `Spatie\Sluggable\SlugOptions` class.
+Your Eloquent models should use the `Oddvalue\Sluggable\HasSlug` trait and the `Oddvalue\Sluggable\SlugOptions` class.
 
-The trait contains an abstract method `getSlugOptions()` that you must implement yourself. 
+The trait contains an abstract method `getSlugOptions()` that you must implement yourself.
 
 Your models' migrations should have a field to save the generated slug to.
 
@@ -43,14 +43,14 @@ Here's an example of how to implement the trait:
 
 namespace App;
 
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Oddvalue\Sluggable\HasSlug;
+use Oddvalue\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class YourEloquentModel extends Model
 {
     use HasSlug;
-    
+
     /**
      * Get the options for generating the slug.
      */
@@ -95,14 +95,14 @@ To use the generated slug in routes, remember to use Laravel's [implicit route m
 ```php
 namespace App;
 
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Oddvalue\Sluggable\HasSlug;
+use Oddvalue\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class YourEloquentModel extends Model
 {
     use HasSlug;
-    
+
     /**
      * Get the options for generating the slug.
      */
@@ -112,7 +112,7 @@ class YourEloquentModel extends Model
             ->generateSlugsFrom('name')
             ->saveSlugsTo('slug');
     }
-    
+
     /**
      * Get the route key for the model.
      *
@@ -193,9 +193,9 @@ public function getSlugOptions() : SlugOptions
 You can also override the generated slug just by setting it to another value than the generated slug.
 
 ```php
-$model = EloquentModel:create(['name' => 'my name']); //slug is now "my-name"; 
+$model = EloquentModel:create(['name' => 'my name']); //slug is now "my-name";
 $model->slug = 'my-custom-url';
-$model->save(); //slug is now "my-custom-url"; 
+$model->save(); //slug is now "my-custom-url";
 ```
 
 If you don't want to create the slug when the model is initially created you can set use the `doNotGenerateSlugsOnCreate()` function.
@@ -225,7 +225,7 @@ public function getSlugOptions() : SlugOptions
 This can be helpful for creating permalinks that don't change until you explicitly want it to.
 
 ```php
-$model = EloquentModel:create(['name' => 'my name']); //slug is now "my-name"; 
+$model = EloquentModel:create(['name' => 'my name']); //slug is now "my-name";
 $model->save();
 
 $model->name = 'changed name';
@@ -256,7 +256,7 @@ If you discover any security related issues, please email freek@spatie.be instea
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
+Our address is: Oddvalue, Samberstraat 69D, 2060 Antwerp, Belgium.
 
 We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
 
@@ -267,9 +267,9 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 ## Support us
 
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+Oddvalue is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie).
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License

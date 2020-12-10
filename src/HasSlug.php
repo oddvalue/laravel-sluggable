@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Sluggable;
+namespace Oddvalue\Sluggable;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 trait HasSlug
 {
-    /** @var \Spatie\Sluggable\SlugOptions */
+    /** @var \Oddvalue\Sluggable\SlugOptions */
     protected $slugOptions;
 
     abstract public function getSlugOptions(): SlugOptions;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Sluggable\Test\Integration;
+namespace Oddvalue\Sluggable\Test\Integration;
 
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
+use Oddvalue\Sluggable\HasSlug;
+use Oddvalue\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class TestModel extends Model
